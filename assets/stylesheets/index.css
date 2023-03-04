@@ -35,4 +35,6 @@ body > .heading{
     top: 3vh;
     left: 30vw;
     font-size: 11vw;
+    overflow: hidden;
+    width: 41vw;
 }

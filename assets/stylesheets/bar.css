@@ -8,6 +8,7 @@
     background-color: #171717;
     align-items: center;
     row-gap: 5vh;
+    overflow: hidden;
 }
 .bar > .heading{
     position: relative;

@@ -5,6 +5,7 @@
     width: 99%;
     position: absolute;
     top: 23.2vh;
+    overflow: hidden;
 }
 .bar_content > .dates_item_content{
     display: none;
@@ -12,6 +13,7 @@
     height: 96%;
     width: 100%;
     align-items: center;
+    overflow: hidden;
 }
 .bar_content > .dates_item_content > .display_content{
     display: flex;
@@ -19,6 +21,7 @@
     height: 33.33%;
     width: 100%;
     align-items: center;
+    overflow: hidden;
 }
 .bar_content > .dates_item_content > .display_content > .content_box{
     position: relative;
