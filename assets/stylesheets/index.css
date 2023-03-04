@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'orbitron';
+  src: url('../fonts/orbitron-variablefont_wght-webfont.woff2') format('woff2'),
+       url('../fonts/orbitron-variablefont_wght-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'space_mono';
+  src: url('../fonts/spacemono-bold-webfont.woff2') format('woff2'),
+       url('../fonts/spacemono-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -moz-window-dragging: no-drag;
+}
+body{
+  background-color: #212129;
+  overflow-x: hidden;
+}
