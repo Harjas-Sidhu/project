@@ -1,0 +1,82 @@
+.bar_content{
+    display: flex;
+    flex-direction: column;
+    height: 76vh;
+    width: 99%;
+    position: absolute;
+    top: 23.2vh;
+}
+.bar_content > .dates_item_content{
+    display: none;
+    flex-direction: column;
+    height: 96%;
+    width: 100%;
+    align-items: center;
+}
+.bar_content > .dates_item_content > .display_content{
+    display: flex;
+    flex-direction: column;
+    height: 33.33%;
+    width: 100%;
+    align-items: center;
+}
+.bar_content > .dates_item_content > .display_content > .content_box{
+    position: relative;
+    display: flex;
+    height: 8vw;
+    width: 18vw;
+    background-color: white;
+    top: 4vh;
+    right: 14vh;
+    z-index: 2;
+    font-family: 'space_mono';
+    font-size: 4.8vw;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+}
+.bar_content > .dates_item_content > .display_content > .content_box:before{
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 2.8vh;
+    right: 13vw;
+    width: 10vw;
+    height: 2vh;
+    background-color: #212129;
+    transform: rotate(45deg);
+}
+.bar_content > .dates_item_content > .display_content > .content_box:after{
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1;
+    bottom: 2.9vh;
+    left: 12.7vw;
+    width: 10vw;
+    height: 2vh;
+    background-color: #212129;
+    transform: rotate(45deg);
+}
+.bar_content > .dates_item_content > .display_content > .content_box > .box-content{
+    position: relative;
+    z-index: 2;
+}
+.bar_content > .dates_item_content > .display_content > .content_bar{
+    position: relative;
+    height: 0.5vh;
+    width: 85%;
+    background-image: linear-gradient(45deg, #212129 14%, #31303B 100%);
+    top: 1.9vh;
+}
+.bar_content > .dates_item_content > .display_content > .content{
+    display: flex;
+    color: white;
+    height: 68%;
+    width: 85%;
+    position: relative;
+    top: 5vh;
+    left: 0vw;
+}

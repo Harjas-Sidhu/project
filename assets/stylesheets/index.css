@@ -22,6 +22,7 @@
   user-select: none;
   -webkit-user-drag: none;
   -moz-window-dragging: no-drag;
+  border: 0;
 }
 body{
   background-color: #212129;

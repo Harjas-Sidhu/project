@@ -5,9 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/stylesheets/index.css">
   <link rel="stylesheet" href="assets/stylesheets/bar.css">
+  <link rel="stylesheet" href="assets/stylesheets/bar_content.css">
   <title>Anicon</title>
 </head>
 <body>
-  <div class="bar"></div>
+  <div class="bar">
+    <h1 class="heading">SCHEDULE</h1>
+    <div class="dates">
+      <button class="dates_item" id="first" onclick="tabs('first-content');">23</button>
+      <button class="dates_item" id="second" onclick="tabs('second-content');">24</button>
+      <button class="dates_item" id="third" onclick="tabs('third-content');">25</button>
+    </div>
+  </div>
+  <div class="bar_content">
+    <div class="dates_item_content" id="first-content">
+      <div class="display_content">
+        <div class="content_box"><span class="box_content">2hs_</span></div>
+        <div class="content_bar"></div>
+        <div class="content"></div>
+      </div>
+      <div class="display_content">
+        <div class="content_box"><span class="box_content">1hs_</span></div>
+        <div class="content_bar"></div>
+        <div class="content"></div>
+      </div>
+      <div class="display_content">
+        <div class="content_box"><span class="box_content">4hs_</span></div>
+        <div class="content_bar"></div>
+        <div class="content"></div>
+      </div>
+    </div>
+    <div class="dates_item_content" id="second-content">
+      <div class="display_content">
+        <div class="content_box"><span class="box_content">1hs_</span></div>
+        <div class="content_bar"></div>
+        <div class="content"></div>
+      </div>
+      <div class="display_content">
+        <div class="content_box"><span class="box_content">3hs_</span></div>
+        <div class="content_bar"></div>
+        <div class="content"></div>
+      </div>    
+    </div>
+    <div class="dates_item_content" id="third-content">
+      <div class="display_content">
+        <div class="content_box"><span class="box_content">1/2hs_</span></div>
+        <div class="content_bar"></div>
+        <div class="content"></div>
+      </div>    
+    </div>
+  </div>
+  <script src="assets/scripts/bar.js"></script>
 </body>
 </html>

@@ -1,8 +1,37 @@
 .bar{
-    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    height: 12vh;
     width: 100%;
     position: absolute;
-    top: 1vh;
-    left: 1vw;
+    top: 11vh;
     background-color: #171717;
+    align-items: center;
+    row-gap: 5vh;
+}
+.bar > .heading{
+    position: relative;
+    top: 2vh;
+    height: 5vh;
+    font-family: 'space_mono', sans-serif;
+    font-size: 5.5vw;
+    color: #8C8C8F;
+}
+.bar > .dates{
+    display: flex;
+    column-gap: 8vw;
+    position: relative;
+    top: 0.2vh;
+}
+.bar > .dates > .dates_item{
+    color: #343643;
+    font-family: 'space_mono', sans-serif;
+    font-size: 7vw;
+    height: 4vh;
+    background-color: transparent;
+    border: 0;
+}
+.bar > .dates > #first{
+    color: #04D368;
+    border-bottom: 0.5vh solid #04D368;
 }
