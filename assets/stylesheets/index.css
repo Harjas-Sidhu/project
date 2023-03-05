@@ -28,13 +28,3 @@ body{
     background-color: #212129;
     overflow-x: hidden;
 }
-body > .heading{
-    color: white;
-    font-family: 'space_mono';
-    position: relative;
-    top: 3vh;
-    left: 30vw;
-    font-size: 11vw;
-    overflow: hidden;
-    width: 41vw;
-}

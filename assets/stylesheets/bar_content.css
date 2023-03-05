@@ -11,7 +11,7 @@
     display: none;
     flex-direction: column;
     height: 96%;
-    width: 100%;
+    width: 99%;
     align-items: center;
     overflow: hidden;
 }
@@ -71,6 +71,9 @@
     position: relative;
     height: 0.5vh;
     width: 85%;
+    background-image: -webkit-linear-gradient(45deg, #212129 14%, #31303B 100%);
+    background-image: -o-linear-gradient(45deg, #212129 14%, #31303B 100%);
+    background-image: -moz-linear-gradient(45deg, #212129 14%, #31303B 100%);
     background-image: linear-gradient(45deg, #212129 14%, #31303B 100%);
     top: 1.9vh;
 }
@@ -78,10 +81,10 @@
     display: flex;
     color: white;
     height: 68%;
-    width: 85%;
+    width: 100%;
     position: relative;
     top: 5vh;
-    left: 0vw;
+    left: 6vw;
     overflow-x: hidden;
     overflow-y: hidden;
 }
@@ -90,13 +93,16 @@
     position: absolute;
     left: 54vw;
     top: 0;
-    width: 57%;
+    width: 38%;
     height: 100%;
-    background-image: linear-gradient(270deg, transparent 0%, #212129 96%);
+    background-image: -webkit-linear-gradient(305deg, transparent 19%, #212129 71%);
+    background-image: -o-linear-gradient(305deg, transparent 19%, #212129 71%);
+    background-image: -moz-linear-gradient(305deg, transparent 19%, #212129 71%);
+    background-image: linear-gradient(305deg, transparent 19%, #212129 71%);
 }
 .bar_content > .dates_item_content > .display_content > .content > .content_image{
     position: relative;
-    left: 5vw;
+    left: 7vw;
 }
 .bar_content > .dates_item_content > .display_content > .content > h1{
     font-family: 'space_mono';
@@ -110,7 +116,7 @@
 .bar_content > .dates_item_content > .display_content > .content > .h_bar{
     background-color: white;
     height: 0.3vh;
-    width: 15%;
+    width: 12%;
     position: relative;
     top: 13.4vh;
     right: 28vw;
@@ -123,4 +129,5 @@
     position: relative;
     top: 13vh;
     left: 21vw;
+    height: 1vh;
 }

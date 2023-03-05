@@ -1,0 +1,28 @@
+header{
+    position: relative;
+    top: 0vh;
+    left: 0vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 11vh;
+    overflow-x: hidden;
+}
+header > .heading{
+    color: white;
+    font-family: 'space_mono';
+    font-size: 11vw;
+    overflow: hidden;
+}
+header > .heading > span{
+    background-image: -webkit-linear-gradient(203deg, #faef17 14%, #0dbb5f 100%);
+    background-image: -o-linear-gradient(203deg, #faef17 14%, #0dbb5f 100%);
+    background-image: -moz-linear-gradient(203deg, #faef17 14%, #0dbb5f 100%);
+    background-image: linear-gradient(270deg, #faef17 14%, #0dbb5f 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}

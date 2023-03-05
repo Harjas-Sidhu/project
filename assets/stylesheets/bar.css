@@ -23,6 +23,7 @@
     column-gap: 8vw;
     position: relative;
     top: 0.2vh;
+    width: 50vw;
 }
 .bar > .dates > .dates_item{
     color: #343643;
@@ -31,6 +32,7 @@
     height: 4vh;
     background-color: transparent;
     border: 0;
+    width: 12vw;
 }
 .bar > .dates > #first{
     color: #04D368;
