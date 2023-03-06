@@ -1,94 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/stylesheets/index.css">
-  <link rel="stylesheet" href="assets/stylesheets/bar.css">
-  <link rel="stylesheet" href="assets/stylesheets/bar_content.css">
   <link rel="stylesheet" href="assets/stylesheets/header.css">
+  <link rel="stylesheet" href="assets/stylesheets/homepage_bar.css">
+  <link rel="stylesheet" href="assets/stylesheets/event_page_bar.css">
+  <link rel="stylesheet" href="assets/stylesheets/homepage_bar_content.css">
+  <link rel="stylesheet" href="assets/stylesheets/event_page_contents.css">
   <title>Anicon</title>
 </head>
+
 <body>
   <header>
+    <div class="arrow" id="arrow" onclick="link('homepage');"></div>
     <h1 class="heading"><span>AN</span>IC<span>O</span>N</h1>
   </header>
-  <div class="bar">
-    <h1 class="heading">SCHEDULE</h1>
-    <div class="dates">
-      <button class="dates_item" id="first" onclick="tabs('first-content');">23</button>
-      <button class="dates_item" id="second" onclick="tabs('second-content');">24</button>
-      <button class="dates_item" id="third" onclick="tabs('third-content');">25</button>
+  <div class="homepage" id="homepage">
+    <div class="bar">
+      <h1 class="heading">SCHEDULE</h1>
+      <div class="dates">
+        <button class="dates_item" id="first" onclick="tabs('first-content');">14</button>
+        <button class="dates_item" id="second" onclick="tabs('second-content');">15</button>
+        <button class="dates_item" id="third" onclick="tabs('third-content');">16</button>
+      </div>
+    </div>
+    <div class="bar_content">
+      <div class="dates_item_content" id="first-content">
+        <div class="display_content" onclick="link('merch_event');">
+          <div class="content_box"><span class="box_content">2hs_</span></div>
+          <div class="content_bar"></div>
+          <div class="content">
+            <h1>Merch Selling</h1>
+            <h2>9:00AM - 11:00AM</h2>
+            <div class="h_bar"></div>
+            <img src="assets/images/icons8-stockx-64.svg" alt="stockx" class="content_image">
+          </div>
+        </div>
+        <div class="display_content" onclick="link('quiz_event');">
+          <div class="content_box"><span class="box_content">1hs_</span></div>
+          <div class="content_bar"></div>
+          <div class="content">
+            <h1>Quiz</h1>
+            <h2>11:00AM - 12:00PM</h2>
+            <div class="h_bar"></div>
+            <img src="assets/images/icons8-mando-64.svg" alt="mando" class="content_image">
+          </div>
+        </div>
+        <div class="display_content" onclick="link('cosplay_event');">
+          <div class="content_box"><span class="box_content">4hs_</span></div>
+          <div class="content_bar"></div>
+          <div class="content">
+            <h1>Cosplay</h1>
+            <h2>2:00PM - 5:00PM</h2>
+            <div class="h_bar"></div>
+            <img src="assets/images/icons8-super-mario-64.svg" alt="super-mario" class="content_image">
+          </div>
+        </div>
+      </div>
+      <div class="dates_item_content" id="second-content">
+        <div class="display_content">
+          <div class="content_box"><span class="box_content">1hs_</span></div>
+          <div class="content_bar"></div>
+          <div class="content">
+            <h1>Merch Selling</h1>
+            <h2>9:00AM - 10:00AM</h2>
+            <div class="h_bar"></div>
+            <img src="assets/images/icons8-walter-white-64.svg" alt="walter-white" class="content_image">
+          </div>
+        </div>
+        <div class="display_content">
+          <div class="content_box"><span class="box_content">3hs_</span></div>
+          <div class="content_bar"></div>
+          <div class="content">
+            <h1>Sketching</h1>
+            <h2>10:00AM - 1:00PM</h2>
+            <div class="h_bar"></div>
+            <img src="assets/images/icons8-mando-64.svg" alt="mando" class="content_image">
+          </div>
+        </div>
+      </div>
+      <div class="dates_item_content" id="third-content">
+        <div class="display_content">
+          <div class="content_box"><span class="box_content">1/2hs_</span></div>
+          <div class="content_bar"></div>
+          <div class="content">
+            <h1>Guitar</h1>
+            <h2>9:00AM - 10:00AM</h2>
+            <div class="h_bar"></div>
+            <img src="assets/images/icons8-stockx-64.svg" alt="stockx" class="content_image">
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="bar_content">
-    <div class="dates_item_content" id="first-content">
-      <div class="display_content">
-        <div class="content_box"><span class="box_content">2hs_</span></div>
-        <div class="content_bar"></div>
-        <div class="content">
-          <h1>Merch Selling</h1>
-          <h2>9:00 AM - 11:00AM</h2>
-          <div class="h_bar"></div>
-          <img src="assets/images/icons8-stockx-64.svg" alt="stockx" class="content_image">
-        </div>
-      </div>
-      <div class="display_content">
-        <div class="content_box"><span class="box_content">1hs_</span></div>
-        <div class="content_bar"></div>
-        <div class="content">
-          <h1>Sketching</h1>
-          <h2>11:00 AM - 12:00PM</h2>
-          <div class="h_bar"></div>
-          <img src="assets/images/icons8-mando-64.svg" alt="mando" class="content_image">
-        </div>
-      </div>
-      <div class="display_content">
-        <div class="content_box"><span class="box_content">4hs_</span></div>
-        <div class="content_bar"></div>
-        <div class="content">
-          <h1>Guitar</h1>
-          <h2>2:00 PM - 5:00PM</h2>
-          <div class="h_bar"></div>
-          <img src="assets/images/icons8-super-mario-64.svg" alt="super-mario" class="content_image">
-        </div>
-      </div>
+  <div class="event_page" id="merch_event">
+    <div class="bar">
+      <h1 class="heading">14 APRIL</h1>
     </div>
-    <div class="dates_item_content" id="second-content">
-      <div class="display_content">
-        <div class="content_box"><span class="box_content">1hs_</span></div>
-        <div class="content_bar"></div>
-        <div class="content">
-          <h1>Merch Selling</h1>
-          <h2>9:00 AM - 10:00AM</h2>
-          <div class="h_bar"></div>
-          <img src="assets/images/icons8-walter-white-64.svg" alt="walter-white" class="content_image">
-        </div>
+    <div class="event_page_body">
+      <div class="overlay_1">
+        <img src="assets/images/merch.webp" alt="merch" class="image">
       </div>
-      <div class="display_content">
-        <div class="content_box"><span class="box_content">3hs_</span></div>
-        <div class="content_bar"></div>
-        <div class="content">
-          <h1>Cosplay</h1>
-          <h2>10:00 AM - 1:00PM</h2>
-          <div class="h_bar"></div>
-          <img src="assets/images/icons8-mando-64.svg" alt="mando" class="content_image">
-        </div>
-      </div>    
+      <div class="image_box"><span class="box_content">2hs_</span></div>
+      <h1 class="title">ANIME MERCH SALE</h1>
+      <div class="overlay_2">
+        <img src="assets/images/icons8-stockx-64.svg" alt="stockx" class="title_img">
+      </div>
+      <div class="bar"></div>
+      <h2 class="sub_title">CUSTOM MERCH AVAILABLE</h2>
+      <p class="body">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam officia ipsam iusto nobis non dignissimos illum eius odio? Ut nulla nobis itaque atque voluptate deserunt quia, natus magnam maiores odio?
+      </p>
+      <button type="submit" class="register">REGISTER</button>
     </div>
-    <div class="dates_item_content" id="third-content">
-      <div class="display_content">
-        <div class="content_box"><span class="box_content">1/2hs_</span></div>
-        <div class="content_bar"></div>
-        <div class="content">
-          <h1>Merch Selling</h1>
-          <h2>9:00 AM - 10:00AM</h2>
-          <div class="h_bar"></div>
-          <img src="assets/images/icons8-stockx-64.svg" alt="stockx" class="content_image">
-        </div>
-      </div>    
+  </div>
+  <div class="event_page" id="quiz_event">
+    <div class="bar">
+      <h1 class="heading">14 APRIL</h1>
+    </div>
+    <div class="event_page_body">
+      <div class="overlay_1">
+        <img src="assets/images/quiz.webp" alt="quiz" class="image">
+      </div>
+      <div class="image_box"><span class="box_content">1hs_</span></div>
+      <h1 class="title">QUIZ</h1>
+      <div class="overlay_2">
+        <img src="assets/images/icons8-mando-64.svg" alt="mando" class="title_img">
+      </div>
+      <div class="bar"></div>
+      <h2 class="sub_title">AN ANIME QUIZ</h2>
+      <p class="body">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam officia ipsam iusto nobis non dignissimos illum eius odio? Ut nulla nobis itaque atque voluptate deserunt quia, natus magnam maiores odio?
+      </p>
+      <button type="submit" class="register">REGISTER</button>
+    </div>
+  </div>
+  <div class="event_page" id="cosplay_event">
+    <div class="bar">
+      <h1 class="heading">14 APRIL</h1>
+    </div>
+    <div class="event_page_body">
+      <div class="overlay_1">
+        <img src="assets/images/cosplay.webp" alt="cosplay" class="image">
+      </div>
+      <div class="image_box"><span class="box_content">4hs_</span></div>
+      <h1 class="title">COSPLAY</h1>
+      <div class="overlay_2">
+        <img src="assets/images/icons8-super-mario-64.svg" alt="super-mario" class="title_img">
+      </div>
+      <div class="bar"></div>
+      <h2 class="sub_title">A COSPLAY EVENT</h2>
+      <p class="body">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam officia ipsam iusto nobis non dignissimos illum eius odio? Ut nulla nobis itaque atque voluptate deserunt quia, natus magnam maiores odio?
+      </p>
+      <button type="submit" class="register">REGISTER</button>
     </div>
   </div>
   <script src="assets/scripts/bar.js"></script>
+  <script src="assets/scripts/link.js"></script>
 </body>
 </html>

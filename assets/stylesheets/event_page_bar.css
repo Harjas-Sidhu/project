@@ -1,0 +1,16 @@
+.event_page > .bar{
+    display: flex;
+    flex-direction: column;
+    height: 6vh;
+    width: 100%;
+    position: absolute;
+    background-color: #171717;
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+}
+.event_page > .bar > .heading{
+    font-family: 'space_mono', sans-serif;
+    font-size: 5.5vw;
+    color: #8C8C8F;
+}

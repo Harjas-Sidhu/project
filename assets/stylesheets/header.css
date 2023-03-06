@@ -9,6 +9,16 @@ header{
     height: 11vh;
     overflow-x: hidden;
 }
+header > .arrow{
+    border: solid #33323D;
+    border-width: 0 1vw 1vw 0;
+    display: none;
+    padding: 2.5vw;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    position: absolute;
+    right: 85vw;
+}
 header > .heading{
     color: white;
     font-family: 'space_mono';

@@ -4,6 +4,7 @@
         url('../fonts/orbitron-variablefont_wght-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: fallback;
 }
 @font-face {
     font-family: 'space_mono';
@@ -11,6 +12,7 @@
         url('../fonts/spacemono-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: fallback;
 }
 *{
     margin: 0;
@@ -26,5 +28,19 @@
 }
 body{
     background-color: #212129;
+    overflow-x: hidden;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+.homepage{
+    display: none;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+.event_page{
+    display: flex;
+    height: 100%;
+    width: 100%;
     overflow-x: hidden;
 }

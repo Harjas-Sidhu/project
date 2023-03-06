@@ -1,4 +1,4 @@
-.bar_content{
+.homepage > .bar_content{
     display: flex;
     flex-direction: column;
     height: 76vh;
@@ -7,7 +7,7 @@
     top: 23.2vh;
     overflow: hidden;
 }
-.bar_content > .dates_item_content{
+.homepage > .bar_content > .dates_item_content{
     display: none;
     flex-direction: column;
     height: 96%;
@@ -15,7 +15,7 @@
     align-items: center;
     overflow: hidden;
 }
-.bar_content > .dates_item_content > .display_content{
+.homepage > .bar_content > .dates_item_content > .display_content{
     display: flex;
     flex-direction: column;
     height: 33.33%;
@@ -23,14 +23,14 @@
     align-items: center;
     overflow: hidden;
 }
-.bar_content > .dates_item_content > .display_content > .content_box{
+.homepage > .bar_content > .dates_item_content > .display_content > .content_box{
     position: relative;
     display: flex;
     height: 8vw;
     width: 18vw;
     background-color: white;
     top: 4vh;
-    right: 14vh;
+    right: 33vw;
     z-index: 2;
     font-family: 'space_mono';
     font-size: 4.8vw;
@@ -38,36 +38,14 @@
     justify-content: center;
     align-items: center;
     border: 0;
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
+    clip-path: polygon(-35% 0%, 20% 100%, 100% 100%, 100% 47%, 78% 0%);
 }
-.bar_content > .dates_item_content > .display_content > .content_box:before{
-    content: "";
-    display: block;
-    position: absolute;
-    z-index: 1;
-    top: 2.8vh;
-    right: 13vw;
-    width: 10vw;
-    height: 2vh;
-    background-color: #212129;
-    transform: rotate(45deg);
-}
-.bar_content > .dates_item_content > .display_content > .content_box:after{
-    content: "";
-    display: block;
-    position: absolute;
-    z-index: 1;
-    bottom: 2.9vh;
-    left: 12.7vw;
-    width: 10vw;
-    height: 2vh;
-    background-color: #212129;
-    transform: rotate(45deg);
-}
-.bar_content > .dates_item_content > .display_content > .content_box > .box-content{
+.homepage > .bar_content > .dates_item_content > .display_content > .content_box > .box-content{
     position: relative;
     z-index: 2;
 }
-.bar_content > .dates_item_content > .display_content > .content_bar{
+.homepage > .bar_content > .dates_item_content > .display_content > .content_bar{
     position: relative;
     height: 0.5vh;
     width: 85%;
@@ -77,7 +55,7 @@
     background-image: linear-gradient(45deg, #212129 14%, #31303B 100%);
     top: 1.9vh;
 }
-.bar_content > .dates_item_content > .display_content > .content{
+.homepage > .bar_content > .dates_item_content > .display_content > .content{
     display: flex;
     color: white;
     height: 68%;
@@ -88,23 +66,26 @@
     overflow-x: hidden;
     overflow-y: hidden;
 }
-.bar_content > .dates_item_content > .display_content > .content:after{
+.homepage > .bar_content > .dates_item_content > .display_content > .content:after{
     content: '';
     position: absolute;
     left: 54vw;
     top: 0;
     width: 38%;
     height: 100%;
-    background-image: -webkit-linear-gradient(305deg, transparent 19%, #212129 71%);
-    background-image: -o-linear-gradient(305deg, transparent 19%, #212129 71%);
-    background-image: -moz-linear-gradient(305deg, transparent 19%, #212129 71%);
-    background-image: linear-gradient(305deg, transparent 19%, #212129 71%);
+    background-image: -webkit-linear-gradient(305deg, transparent 38%, #212129 71%);
+    background-image: -o-linear-gradient(305deg, transparent 38%, #212129 71%);
+    background-image: -moz-linear-gradient(305deg, transparent 38%, #212129 71%);
+    background-image: linear-gradient(305deg, transparent 38%, #212129 71%);
 }
-.bar_content > .dates_item_content > .display_content > .content > .content_image{
+.homepage > .bar_content > .dates_item_content > .display_content > .content > .content_image{
     position: relative;
     left: 7vw;
+    height: 16vh;
+    width: 37vw;
+    object-fit: contain;
 }
-.bar_content > .dates_item_content > .display_content > .content > h1{
+.homepage > .bar_content > .dates_item_content > .display_content > .content > h1{
     font-family: 'space_mono';
     font-size: 8vw;
     width: 0vw;
@@ -113,21 +94,21 @@
     top: 2vh;
     left: 7vw;
 }
-.bar_content > .dates_item_content > .display_content > .content > .h_bar{
+.homepage > .bar_content > .dates_item_content > .display_content > .content > .h_bar{
     background-color: white;
     height: 0.3vh;
-    width: 12%;
+    width: 9%;
     position: relative;
     top: 13.4vh;
-    right: 28vw;
+    right: 32vw;
 }
-.bar_content > .dates_item_content > .display_content > .content > h2{
+.homepage > .bar_content > .dates_item_content > .display_content > .content > h2{
     font-family: 'space_mono';
-    font-size: 3vw;
-    width: 34vw;
+    font-size: 3.5vw;
+    width: 37vw;
     color: white;
     position: relative;
     top: 13vh;
-    left: 21vw;
+    left: 17vw;
     height: 1vh;
 }
