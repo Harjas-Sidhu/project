@@ -73,10 +73,10 @@
     top: 0;
     width: 38%;
     height: 100%;
-    background-image: -webkit-linear-gradient(305deg, transparent 38%, #212129 71%);
-    background-image: -o-linear-gradient(305deg, transparent 38%, #212129 71%);
-    background-image: -moz-linear-gradient(305deg, transparent 38%, #212129 71%);
-    background-image: linear-gradient(305deg, transparent 38%, #212129 71%);
+    background-image: -webkit-linear-gradient(305deg, transparent 4%, #212129 85%);
+    background-image: -o-linear-gradient(305deg, transparent 4%, #212129 85%);
+    background-image: -moz-linear-gradient(305deg, transparent 4%, #212129 85%);
+    background-image: linear-gradient(305deg, transparent 4%, #212129 85%);
 }
 .homepage > .bar_content > .dates_item_content > .display_content > .content > .content_image{
     position: relative;

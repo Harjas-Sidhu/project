@@ -6,6 +6,7 @@
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 .event_page_body > .overlay_1{
     width: 100%;
@@ -72,7 +73,7 @@
 }
 .event_page_body > .overlay_2{
     height: 26vh;
-    width: 41vw;
+    width: 44vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -95,11 +96,11 @@
     background-image: linear-gradient(305deg, transparent 4%, #212129 85%)
 }
 #quiz_event > .event_page_body > .overlay_2{
-    bottom: 11vh;
+    bottom: 7vh;
     left: 51vw;
 }
 #cosplay_event > .event_page_body > .overlay_2{
-    bottom: 9vh;
+    bottom: 4vh;
     left: 53vw;
 }
 .event_page_body > .overlay_2 > .title_img{
@@ -118,6 +119,12 @@
     bottom: 11.9vh;
     left: 8vw;
 }
+#quiz_event > .event_page_body > .bar{
+    bottom: 7.9vh;
+}
+#cosplay_event > .event_page_body > .bar{
+    bottom: 5.9vh;
+}
 .event_page_body > .sub_title{
     color: #88888B;
     font-size: 4.8vw;
@@ -128,6 +135,12 @@
     width: 44vw;
     font-family: 'space_mono', sans-serif;
 }
+#quiz_event > .event_page_body > .sub_title{
+    bottom: 9vh;
+}
+#cosplay_event > .event_page_body > .sub_title{
+    bottom: 8vh;
+}
 .event_page_body > .body{
     color: #88888B;
     font-size: 4vw;
@@ -137,6 +150,12 @@
     word-wrap: normal;
     width: 82vw;
     font-family: 'space_mono', sans-serif;
+}
+#quiz_event > .event_page_body > .body{
+    bottom: 6vh;
+}
+#cosplay_event > .event_page_body > .body{
+    bottom: 6vh;
 }
 .event_page_body > .register{
     position: relative;
@@ -153,4 +172,10 @@
     justify-content: center;
     font-family: 'orbitron', sans-serif;
     font-size: 5vw;
+}
+#quiz_event > .event_page_body > .register{
+    bottom: 2vh;
+}
+#cosplay_event > .event_page_body > .register{
+    bottom: 1.9vh;
 }
