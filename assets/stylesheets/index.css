@@ -31,16 +31,19 @@ body{
     overflow-x: hidden;
     min-height: 100vh;
     min-width: 100vw;
+    overflow: hidden;
 }
 .homepage{
     display: none;
     height: 100%;
     width: 100%;
     overflow-x: hidden;
+    overflow-y: scroll;
 }
 .event_page{
     display: flex;
     height: 100%;
     width: 100%;
     overflow-x: hidden;
+    overflow-y: hidden;
 }

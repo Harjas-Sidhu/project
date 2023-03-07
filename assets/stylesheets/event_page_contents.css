@@ -119,6 +119,7 @@
     position: relative;
     bottom: 11.9vh;
     left: 8vw;
+    display: flex;
 }
 #quiz_event > .event_page_body > .bar{
     bottom: 7.9vh;
@@ -133,7 +134,8 @@
     bottom: 13vh;
     left: 33vw;
     word-wrap: normal;
-    width: 44vw;
+    width: 39vw;
+    display: flex;
     font-family: 'space_mono', sans-serif;
 }
 #quiz_event > .event_page_body > .sub_title{
@@ -149,6 +151,7 @@
     bottom: 10vh;
     left: 8vw;
     word-wrap: normal;
+    display: flex;
     width: 82vw;
     font-family: 'space_mono', sans-serif;
 }
