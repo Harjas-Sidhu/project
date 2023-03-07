@@ -5,7 +5,9 @@
     width: 99%;
     position: absolute;
     top: 23.2vh;
-    overflow: hidden;
+    /* overflow: hidden; */
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 .homepage > .bar_content > .dates_item_content{
     display: none;
