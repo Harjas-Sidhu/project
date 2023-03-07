@@ -39,7 +39,7 @@
     height: 6vh;
     width: 21vw;
     background-color: #04D368;
-    bottom: 2vh;
+    top: -2vh;
     left: 12vw;
     z-index: 1;
     font-family: 'space_mono';
@@ -80,7 +80,7 @@
     justify-content: center;
     position: relative;
     left: 54vw;
-    bottom: 12vh;
+    top: -12vh;
     z-index: -2;
     overflow: hidden;
 }
@@ -97,11 +97,11 @@
     background-image: linear-gradient(305deg, transparent 4%, #212129 85%)
 }
 #quiz_event > .event_page_body > .overlay_2{
-    bottom: 7vh;
+    top: -10vh;
     left: 51vw;
 }
 #cosplay_event > .event_page_body > .overlay_2{
-    bottom: 4vh;
+    top: -10vh;
     left: 53vw;
 }
 .event_page_body > .overlay_2 > .title_img{
@@ -117,38 +117,40 @@
     height: 0.4vh;
     width: 20vw;
     position: relative;
-    bottom: 11.9vh;
+    top: -12.1vh;
     left: 8vw;
     display: flex;
 }
 #quiz_event > .event_page_body > .bar{
-    bottom: 7.9vh;
+    top: -12.1vh;
 }
 #cosplay_event > .event_page_body > .bar{
-    bottom: 5.9vh;
+    top: -12.1vh;
 }
 .event_page_body > .sub_title{
     color: #88888B;
     font-size: 1.3em;
     position: relative;
-    bottom: 13vh;
+    top: -13vh;
     left: 33vw;
     word-wrap: normal;
-    width: 58vw;
+    width: 50vw;
     display: flex;
     font-family: 'space_mono', sans-serif;
 }
 #quiz_event > .event_page_body > .sub_title{
-    bottom: 9vh;
+    top: -13vh;
+    width: 30vw;
 }
 #cosplay_event > .event_page_body > .sub_title{
-    bottom: 8vh;
+    top: -13vh;
+    width: 30vw;
 }
 .event_page_body > .body{
     color: #88888B;
     font-size: 1.1em;
     position: relative;
-    bottom: 10vh;
+    top: -8vh;
     left: 8vw;
     word-wrap: normal;
     display: flex;
@@ -156,14 +158,14 @@
     font-family: 'space_mono', sans-serif;
 }
 #quiz_event > .event_page_body > .body{
-    bottom: 6vh;
+    top: -9vh;
 }
 #cosplay_event > .event_page_body > .body{
-    bottom: 6vh;
+    top: -10vh;
 }
 .event_page_body > .register{
     position: relative;
-    bottom: 4vh;
+    top: -4vh;
     left: 7.5vw;
     width: 85vw;
     height: 8vh;
@@ -178,8 +180,8 @@
     font-size: 1.6em;
 }
 #quiz_event > .event_page_body > .register{
-    bottom: 2vh;
+    top: -4vh;
 }
 #cosplay_event > .event_page_body > .register{
-    bottom: 1.9vh;
+    top: -4.1vh;
 }
