@@ -155,6 +155,7 @@
     word-wrap: normal;
     display: flex;
     width: 82vw;
+    height: 25vh;
     font-family: 'space_mono', sans-serif;
 }
 #quiz_event > .event_page_body > .body{
