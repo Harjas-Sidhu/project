@@ -56,7 +56,7 @@
     color: white;
     width: 82%;
     word-wrap: normal;
-    font-size: 9vw;
+    font-size: 2.5em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -129,7 +129,7 @@
 }
 .event_page_body > .sub_title{
     color: #88888B;
-    font-size: 4.8vw;
+    font-size: 1.3em;
     position: relative;
     bottom: 13vh;
     left: 33vw;
@@ -146,7 +146,7 @@
 }
 .event_page_body > .body{
     color: #88888B;
-    font-size: 4vw;
+    font-size: 1.1em;
     position: relative;
     bottom: 10vh;
     left: 8vw;
@@ -175,7 +175,7 @@
     align-items: center;
     justify-content: center;
     font-family: 'orbitron', sans-serif;
-    font-size: 5vw;
+    font-size: 1.6em;
 }
 #quiz_event > .event_page_body > .register{
     bottom: 2vh;
