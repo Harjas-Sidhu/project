@@ -11,6 +11,7 @@ const link = (page_id) => {
     else{
         document.getElementById('arrow').style.display = 'none';
         document.getElementsByTagName('body')[0].style.overflowY = 'scroll';
+        document.getElementsByTagName('body')[0].style.overflowX = 'hidden';
     }
     document.getElementById(page_id).style.display = 'flex';
 }
