@@ -125,7 +125,7 @@
     top: -12.1vh;
 }
 #cosplay_event > .event_page_body > .bar{
-    top: -12.1vh;
+    top: -11.1vh;
 }
 .event_page_body > .sub_title{
     color: #88888B;
@@ -143,8 +143,8 @@
     width: 30vw;
 }
 #cosplay_event > .event_page_body > .sub_title{
-    top: -13vh;
-    width: 30vw;
+    top: -12vh;
+    width: 33vw;
 }
 .event_page_body > .body{
     color: #88888B;
