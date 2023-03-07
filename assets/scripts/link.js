@@ -6,10 +6,11 @@ const link = (page_id) => {
     document.getElementById('homepage').style.display = 'none';
     if(page_id != 'homepage'){
         document.getElementById('arrow').style.display = 'flex';
+        document.getElementsByTagName('body')[0].style.overflow = 'hidden';
     }
     else{
         document.getElementById('arrow').style.display = 'none';
-        document.getElementsByTagName('body').style.overflowY = 'scroll';
+        document.getElementsByTagName('body')[0].style.overflowY = 'scroll';
     }
     document.getElementById(page_id).style.display = 'flex';
 }
