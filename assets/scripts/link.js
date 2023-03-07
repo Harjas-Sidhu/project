@@ -9,6 +9,7 @@ const link = (page_id) => {
     }
     else{
         document.getElementById('arrow').style.display = 'none';
+        document.getElementsByTagName('body').style.overflowY = 'scroll';
     }
     document.getElementById(page_id).style.display = 'flex';
 }
