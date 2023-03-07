@@ -31,7 +31,7 @@ body{
     overflow-x: hidden;
     min-height: 100vh;
     min-width: 100vw;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .homepage{
     display: none;
