@@ -1,4 +1,4 @@
-.event_page > .bar{
+.event_page>.bar {
     display: flex;
     flex-direction: column;
     height: 6vh;
@@ -9,7 +9,8 @@
     overflow: hidden;
     justify-content: center;
 }
-.event_page > .bar > .heading{
+
+.event_page>.bar>.heading {
     font-family: 'space_mono', sans-serif;
     font-size: 1.5em;
     color: #8C8C8F;

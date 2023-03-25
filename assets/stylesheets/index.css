@@ -6,6 +6,7 @@
     font-style: normal;
     font-display: fallback;
 }
+
 @font-face {
     font-family: 'space_mono';
     src: url('../fonts/spacemono-bold-webfont.woff2') format('woff2'),
@@ -14,7 +15,8 @@
     font-style: normal;
     font-display: fallback;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -26,21 +28,24 @@
     -moz-window-dragging: no-drag;
     border: 0;
 }
-body{
+
+body {
     background-color: #212129;
     overflow-x: hidden;
     min-height: 100vh;
     min-width: 100vw;
     overflow: hidden;
 }
-.homepage{
+
+.homepage {
     display: none;
     height: 100%;
     width: 100%;
     overflow-x: hidden;
     overflow-y: scroll;
 }
-.event_page{
+
+.event_page {
     display: flex;
     height: 100%;
     width: 100%;

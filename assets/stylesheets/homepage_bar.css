@@ -1,4 +1,4 @@
-.homepage > .bar{
+.homepage>.bar {
     display: flex;
     flex-direction: column;
     height: 12vh;
@@ -10,7 +10,8 @@
     row-gap: 5vh;
     overflow: hidden;
 }
-.homepage > .bar > .heading{
+
+.homepage>.bar>.heading {
     position: relative;
     top: 2vh;
     height: 3vh;
@@ -18,14 +19,16 @@
     font-size: 1.49em;
     color: #8C8C8F;
 }
-.homepage > .bar > .dates{
+
+.homepage>.bar>.dates {
     display: flex;
     column-gap: 8vw;
     position: relative;
     top: 0vh;
     width: 50vw;
 }
-.homepage > .bar > .dates > .dates_item{
+
+.homepage>.bar>.dates>.dates_item {
     color: #343643;
     font-family: 'space_mono', sans-serif;
     font-size: 1.6em;
@@ -34,7 +37,8 @@
     border: 0;
     width: 12vw;
 }
-.homepage > .bar > .dates > #first{
+
+.homepage>.bar>.dates>#first {
     color: #04D368;
     border-bottom: 0.5vh solid #04D368;
 }

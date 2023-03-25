@@ -1,4 +1,4 @@
-header{
+header {
     position: relative;
     top: 0vh;
     left: 0vh;
@@ -9,7 +9,8 @@ header{
     height: 11vh;
     overflow-x: hidden;
 }
-header > .arrow{
+
+header>.arrow {
     border: solid #33323D;
     border-width: 0 1vw 1vw 0;
     display: none;
@@ -22,13 +23,17 @@ header > .arrow{
     position: absolute;
     right: 85vw;
 }
-header > .heading{
+
+header>.heading {
     color: white;
     font-family: 'space_mono';
     font-size: 3.5em;
     overflow: hidden;
+    position: absolute;
+    left: 20vw;
 }
-header > .heading > span{
+
+header>.heading>span {
     background-image: -webkit-linear-gradient(203deg, #faef17 14%, #0dbb5f 100%);
     background-image: -o-linear-gradient(203deg, #faef17 14%, #0dbb5f 100%);
     background-image: -moz-linear-gradient(203deg, #faef17 14%, #0dbb5f 100%);
@@ -38,4 +43,42 @@ header > .heading > span{
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+}
+
+header > .menu_icon {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.95vh;
+    position: absolute;
+    right: 5vw;
+    top: 3.1vh;
+    align-items: flex-end;
+    z-index: 4;
+}
+
+header > .menu_icon > .bar1,
+.bar2,
+.bar3 {
+    width: 11.3vw;
+    height: 0.75vh;
+    background-color: #33323D;
+    transition: 0.58s;
+}
+
+header > .menu_icon > .bar2 {
+    width: 9.4vw;
+}
+
+header >.transitioned > .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-2.1vw, 2.2vw);
+    transform: rotate(-45deg) translate(-2.1vw, 2.2vw);
+}
+
+header >.transitioned > .bar2 {
+    opacity: 0;
+}
+
+header >.transitioned > .bar3 {
+    -webkit-transform: rotate(45deg) translate(-2.4vw, -2.4vw);
+    transform: rotate(45deg) translate(-2.4vw, -2.4vw);
 }
