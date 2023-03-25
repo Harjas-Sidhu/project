@@ -62,14 +62,14 @@
     justify-content: center;
     position: relative;
     top: 1vh;
-    left: 8vw;
+    left: 6vw;
 }
 #quiz_event > .event_page_body > .title{
     width: 23%;
     top: 5vh;
 }
 #cosplay_event > .event_page_body > .title{
-    width: 39%;
+    width: 47%;
     top: 4vh;
 }
 .event_page_body > .overlay_2{
@@ -122,7 +122,7 @@
     display: flex;
 }
 #quiz_event > .event_page_body > .bar{
-    top: -12.1vh;
+    top: -9.1vh;
 }
 #cosplay_event > .event_page_body > .bar{
     top: -11.1vh;
@@ -139,7 +139,7 @@
     font-family: 'space_mono', sans-serif;
 }
 #quiz_event > .event_page_body > .sub_title{
-    top: -13vh;
+    top: -11vh;
     width: 30vw;
 }
 #cosplay_event > .event_page_body > .sub_title{
