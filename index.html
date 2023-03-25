@@ -15,18 +15,25 @@
 </head>
 
 <body>
+  <div id="side_bar">
+    <div id="sidenav" class="sidenav">
+      <div class="navbox">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="contact.html">CONTACT US</a>
+        <a href="" class="rgstr">REGISTER</a>
+      </div>
+    </div>
+  </div>
   <header>
     <div class="arrow" id="arrow" onclick="link('homepage');"></div>
     <h1 class="heading"><span>AN</span>IC<span>O</span>N</h1>
-    <div class="menu_icon" onclick="transition(this);">
+    <div class="menu_icon" onclick="transition(this); ToggleNav();">
       <div class="bar1"></div>
       <div class="bar2"></div>
       <div class="bar3"></div>
     </div>
   </header>
-  <div id="side_bar">
-
-  </div>
   <div class="homepage" id="homepage">
     <div class="bar">
       <h1 class="heading">SCHEDULE</h1>
@@ -170,7 +177,7 @@
   </div>
   <script src="assets/scripts/bar.js" async></script>
   <script src="assets/scripts/link.js" async></script>
-  <script src="assets/scripts/sidenav.js" async></script>
+  <script src="assets/scripts/sidebar.js" async></script>
   <script src="assets/scripts/menuicon.js" async></script>
 </body>
 </html>

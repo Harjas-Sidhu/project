@@ -1,0 +1,43 @@
+#side_bar {
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 0;
+    background-color: transparent;
+    z-index: 3;
+    overflow-x: hidden;
+    right: 0;
+    top: 0;
+    transition: 0.8s ease-out;
+}
+#side_bar > .sidenav{
+    display: flex;
+    width: 75%;
+    height: 100%;
+    z-index: 3;
+    background-color: #171717;
+    position: relative;
+    left: 25%;
+    top: 0;
+}
+#side_bar > .sidenav > .navbox{
+    height: 75vh;
+    width: 67vw;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    z-index: 4;
+    font-size: 7.4vw;
+    font-family: 'orbitron', sans-serif;
+    row-gap: 1.5vh;
+}
+#side_bar > .sidenav > .navbox > a{
+    text-decoration: none;
+    color: #565656;
+}
+#side_bar > .sidenav > .navbox > .rgstr{
+    position: relative;
+    top: 27vh;
+}

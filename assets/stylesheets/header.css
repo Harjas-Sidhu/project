@@ -45,7 +45,7 @@ header>.heading>span {
     -moz-text-fill-color: transparent;
 }
 
-header > .menu_icon {
+header>.menu_icon {
     display: flex;
     flex-direction: column;
     row-gap: 0.95vh;
@@ -56,7 +56,7 @@ header > .menu_icon {
     z-index: 4;
 }
 
-header > .menu_icon > .bar1,
+header>.menu_icon>.bar1,
 .bar2,
 .bar3 {
     width: 11.3vw;
@@ -65,20 +65,22 @@ header > .menu_icon > .bar1,
     transition: 0.58s;
 }
 
-header > .menu_icon > .bar2 {
+header>.menu_icon>.bar2 {
     width: 9.4vw;
 }
 
-header >.transitioned > .bar1 {
+header>.transitioned>.bar1 {
     -webkit-transform: rotate(-45deg) translate(-2.1vw, 2.2vw);
     transform: rotate(-45deg) translate(-2.1vw, 2.2vw);
+    background-color: #565656;
 }
 
-header >.transitioned > .bar2 {
+header>.transitioned>.bar2 {
     opacity: 0;
 }
 
-header >.transitioned > .bar3 {
+header>.transitioned>.bar3 {
     -webkit-transform: rotate(45deg) translate(-2.4vw, -2.4vw);
     transform: rotate(45deg) translate(-2.4vw, -2.4vw);
+    background-color: #565656;
 }
