@@ -14,7 +14,7 @@ const OpenNav = () => {
     setTimeout(() => {
         document.getElementById('side_bar').style.backdropFilter = 'blur(10px)';
         document.getElementById('side_bar').style['-webkit-backdrop-filter'] = 'blur(10px)';
-    }, 600);
+    }, 550);
     nav = true;
 }
 
