@@ -6,6 +6,7 @@ const CloseNav = () => {
     setTimeout(() => {
         document.getElementById('side_bar').style.width = '0';
     }, 600);
+    document.getElementsByTagName('body')[0].style.overflowY = 'scroll';
     nav = false;
 }
 
