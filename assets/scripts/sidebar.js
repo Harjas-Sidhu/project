@@ -1,5 +1,3 @@
-import { page_id } from "./link";
-
 let nav = false;
 
 const CloseNav = () => {
@@ -8,7 +6,8 @@ const CloseNav = () => {
     setTimeout(() => {
         document.getElementById('side_bar').style.width = '0';
     }, 600);
-    if(page_id == 'homepage'){
+    let homepage = document.getElementById('homepage').style.display;
+    if(homepage != 'none'){
         document.getElementsByTagName('body')[0].style.overflowY = 'scroll';
     }
     else{
