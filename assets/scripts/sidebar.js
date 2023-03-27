@@ -1,3 +1,5 @@
+import { page_id } from "./link";
+
 let nav = false;
 
 const CloseNav = () => {

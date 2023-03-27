@@ -17,3 +17,5 @@ const link = (page_id) => {
 }
 
 link('homepage');
+
+export {page_id};
