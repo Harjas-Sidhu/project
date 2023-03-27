@@ -52,3 +52,18 @@ body {
     overflow-x: hidden;
     overflow-y: hidden;
 }
+
+.preloader{
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    background-color: #212129;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+}
+.loader{
+    object-fit: contain;
+}

@@ -6,7 +6,12 @@ const CloseNav = () => {
     setTimeout(() => {
         document.getElementById('side_bar').style.width = '0';
     }, 600);
-    document.getElementsByTagName('body')[0].style.overflowY = 'scroll';
+    if(page_id == 'homepage'){
+        document.getElementsByTagName('body')[0].style.overflowY = 'scroll';
+    }
+    else{
+        document.getElementsByTagName('body')[0].style.overflow = 'hidden';
+    }
     nav = false;
 }
 
