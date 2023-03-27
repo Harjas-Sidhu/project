@@ -4,7 +4,7 @@
         url('../fonts/orbitron-variablefont_wght-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-display: fallback;
+    font-display: swap;
 }
 
 @font-face {
@@ -13,7 +13,7 @@
         url('../fonts/spacemono-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-display: fallback;
+    font-display: swap;
 }
 
 * {

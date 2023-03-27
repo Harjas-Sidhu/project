@@ -5,13 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-site-verification" content="AAecZUXA5K4DbzvA5OYun0YYnXWv5bMzsgSe9YrcSXU" />
-  <link rel="stylesheet" href="assets/stylesheets/index.css">
-  <link rel="stylesheet" href="assets/stylesheets/header.css">
-  <link rel="stylesheet" href="assets/stylesheets/homepage_bar.css">
+  <link rel="stylesheet" href="assets/stylesheets/index.css" fetchpriority="high">
+  <link rel="stylesheet" href="assets/stylesheets/header.css" fetchpriority="high">
+  <link rel="stylesheet" href="assets/stylesheets/homepage_bar.css" fetchpriority="high">
   <link rel="stylesheet" href="assets/stylesheets/event_page_bar.css">
-  <link rel="stylesheet" href="assets/stylesheets/homepage_bar_content.css">
+  <link rel="stylesheet" href="assets/stylesheets/homepage_bar_content.css" fetchpriority="high">
   <link rel="stylesheet" href="assets/stylesheets/event_page_contents.css">
-  <link rel="stylesheet" href="assets/stylesheets/side_bar.css">
+  <link rel="stylesheet" href="assets/stylesheets/side_bar.css" fetchpriority="high">
   <title>Anicon</title>
 </head>
 
@@ -53,7 +53,7 @@
             <h1>Merch Selling</h1>
             <h2>9:00AM - 11:00AM</h2>
             <div class="h_bar"></div>
-            <img src="assets/images/icons8-stockx-64.svg" alt="stockx" class="content_image">
+            <img src="assets/images/icons8-stockx-64.svg" alt="stockx" class="content_image" fetchpriority="high">
           </div>
         </div>
         <div class="display_content" onclick="link('quiz_event');">
@@ -63,7 +63,7 @@
             <h1>Quiz</h1>
             <h2>11:00AM - 12:00PM</h2>
             <div class="h_bar"></div>
-            <img src="assets/images/icons8-mando-64.svg" alt="mando" class="content_image">
+            <img src="assets/images/icons8-mando-64.svg" alt="mando" class="content_image" fetchpriority="high">
           </div>
         </div>
         <div class="display_content" onclick="link('cosplay_event');">
@@ -73,7 +73,7 @@
             <h1>Cosplay</h1>
             <h2>2:00PM - 5:00PM</h2>
             <div class="h_bar"></div>
-            <img src="assets/images/icons8-super-mario-64.svg" alt="super-mario" class="content_image">
+            <img src="assets/images/icons8-super-mario-64.svg" alt="super-mario" class="content_image" fetchpriority="high">
           </div>
         </div>
       </div>
@@ -176,8 +176,8 @@
       <button type="submit" class="register">REGISTER</button>
     </div>
   </div>
-  <script src="assets/scripts/bar.js" async></script>
-  <script src="assets/scripts/link.js" async></script>
+  <script src="assets/scripts/bar.js" async fetchpriority="high"></script>
+  <script src="assets/scripts/link.js" async fetchpriority="high"></script>
   <script src="assets/scripts/sidebar.js" async></script>
   <script src="assets/scripts/menuicon.js" async></script>
 </body>
