@@ -10,7 +10,8 @@
     top: 0;
     transition: 0.8s ease-out;
 }
-#side_bar > .sidenav{
+
+#side_bar>.sidenav {
     display: flex;
     width: 75%;
     height: 100%;
@@ -20,7 +21,8 @@
     left: 25%;
     top: 0;
 }
-#side_bar > .sidenav > .navbox{
+
+#side_bar>.sidenav>.navbox {
     height: 75vh;
     width: 67vw;
     position: absolute;
@@ -33,11 +35,13 @@
     font-family: 'orbitron', sans-serif;
     row-gap: 1.5vh;
 }
-#side_bar > .sidenav > .navbox > a{
+
+#side_bar>.sidenav>.navbox>a {
     text-decoration: none;
     color: #565656;
 }
-#side_bar > .sidenav > .navbox > .rgstr{
+
+#side_bar>.sidenav>.navbox>.rgstr {
     position: relative;
     top: 27vh;
 }
