@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'poppins';
+    src: url('../fonts/poppins-black-webfont.woff2') format('woff2'),
+         url('../fonts/poppins-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.scroller{
+    position: absolute;
+    top: 47vh;
+    left: -10vw;
+    width: 123%;
+    height: 39%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.marquee{
+    --gap: 1rem;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: var(--gap);
+    background-color: white;
+    height: 8vh;
+    box-shadow: 0 1vw 4vw black;
+}
+
+.marquee__content{
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-around;
+    gap: var(--gap);
+    min-width: 100%;
+    animation: scroll 120s linear infinite;
+    font-family: 'poppins', sans-serif;
+    font-size: 14vw;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: black;
+}
+
+.marquee__content > li > span{
+    -webkit-text-stroke: 0.6vw black;
+    color: transparent;
+}
+  
+@keyframes scroll{
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+}
+.banner-1{
+    transform: rotate(13deg) translateY(7vh);
+}
+.banner-2{
+    background-image: -webkit-linear-gradient(3deg, #faef17 -1%, #0dbb5f 100%);
+    background-image: -o-linear-gradient(3deg, #faef17 -1%, #0dbb5f 100%);
+    background-image: -moz-linear-gradient(3deg, #faef17 -1%, #0dbb5f 100%);
+    background-image: linear-gradient(3deg, #faef17 -1%, #0dbb5f 100%);
+    transform: rotate(-23deg) translateY(3vh);
+}
+.banner-3{
+    transform: rotate(6deg) translateY(4vh);
+}
