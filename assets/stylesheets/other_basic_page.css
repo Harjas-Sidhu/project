@@ -24,7 +24,7 @@
 
 body {
     background-color: #212129;
-    overflow-x: hidden;
+    overflow: hidden;
     min-width: 100vw;
     min-height: 100vh;
 }
