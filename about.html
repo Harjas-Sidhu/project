@@ -1,96 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <link rel="stylesheet" href="assets/stylesheets/other_basic_page.css" fetchpriority="high">
-    <link rel="stylesheet" href="assets/stylesheets/preloader.css" fetchpriority="high">
-    <link rel="stylesheet" href="assets/stylesheets/side_bar.css">
-    <link rel="stylesheet" href="assets/stylesheets/scroller.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link rel="stylesheet" href="assets/stylesheets/other_basic_page.css" fetchpriority="high">
+  <link rel="stylesheet" href="assets/stylesheets/preloader.css" fetchpriority="high">
+  <link rel="stylesheet" href="assets/stylesheets/side_bar.css">
+  <link rel="stylesheet" href="assets/stylesheets/scroller.css">
+  <link rel="stylesheet" href="assets/stylesheets/card.css">
 </head>
+
 <body>
-    <div class="preloader" id="preloader">
-        <div class="loader">
-          <img src="assets/images/preloader.webp" alt="preloader">
-        </div>
+  <div class="preloader" id="preloader">
+    <div class="loader">
+      <img src="assets/images/preloader.webp" alt="preloader">
     </div>
-    <div id="side_bar">
-        <div id="sidenav" class="sidenav">
-          <div class="navbox">
-            <a href="index.html">HOME</a>
-            <a href="about.html">ABOUT</a>
-            <a href="contact.html">CONTACT US</a>
-            <a href="" class="rgstr">REGISTER</a>
-          </div>
-        </div>
-    </div>
-    <div class="menu_icon" onclick="transition(this); ToggleNav();">
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
-    </div>
-    <div class="homepage" id="homepage">
-      <div class="scroller">
-        <div class="marquee banner-1">
-          <ul class="marquee__content">
-            <li>ani<span>con</span> - </li>
-            <li>ani<span>con</span> - </li>
-            <li>ani<span>con</span> - </li>
-            <li>ani<span>con</span> - </li>
-            <li>ani<span>con</span> - </li>
-            <li>ani<span>con</span> - </li>
-          </ul>
-          <ul class="marquee__content" aria-hidden="true">
-            <li>ani<span>con</span> - </li>
-            <li>ani<span>con</span> - </li>
-            <li>ani<span>con</span> - </li>
-            <li>ani<span>con</span> - </li>
-            <li>ani<span>con</span> - </li>
-            <li>ani<span>con</span> - </li>
-          </ul>
-        </div>
-        <div class="marquee banner-2">
-          <ul class="marquee__content">
-            <li>ani<span>con</span> - </li>
-            <li>ani<span>con</span> - </li>
-            <li>ani<span>con</span> - </li>
-            <li>ani<span>con</span> - </li>
-            <li>ani<span>con</span> - </li>
-            <li>ani<span>con</span> - </li>
-          </ul>
-          <ul class="marquee__content" aria-hidden="true">
-            <li>ani<span>con</span> - </li>
-            <li>ani<span>con</span> - </li>
-            <li>ani<span>con</span> - </li>
-            <li>ani<span>con</span> - </li>
-            <li>ani<span>con</span> - </li>
-            <li>ani<span>con</span> - </li>
-          </ul>
-        </div>
-        <div class="marquee banner-3">
-          <ul class="marquee__content">
-            <li>ani<span>con</span> - </li>
-            <li>ani<span>con</span> - </li>
-            <li>ani<span>con</span> - </li>
-            <li>ani<span>con</span> - </li>
-            <li>ani<span>con</span> - </li>
-            <li>ani<span>con</span> - </li>
-          </ul>
-          <ul class="marquee__content" aria-hidden="true">
-            <li>ani<span>con</span> - </li>
-            <li>ani<span>con</span> - </li>
-            <li>ani<span>con</span> - </li>
-            <li>ani<span>con</span> - </li>
-            <li>ani<span>con</span> - </li>
-            <li>ani<span>con</span> - </li>
-          </ul>
-        </div>
+  </div>
+  <div id="side_bar">
+    <div id="sidenav" class="sidenav">
+      <div class="navbox">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="contact.html">CONTACT US</a>
+        <a href="" class="rgstr">REGISTER</a>
       </div>
     </div>
-    <script src="assets/scripts/preloader.js" async fetchpriority="high"></script>
-    <script src="assets/scripts/sidebar.js" async></script>
-    <script src="assets/scripts/menuicon.js" async></script>
+  </div>
+  <div class="menu_icon" onclick="transition(this); ToggleNav();">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+  <div class="homepage" id="homepage">
+    <div class="imgBx" id="imgBx">
+      <img src="assets/images/aditya.webp" class="card_part card_part-one"></img>
+      <img src="assets/images/aryan.webp" class="card_part card_part-two"></img>
+      <img src="assets/images/harjas.webp" class="card_part card_part-three"></img>
+      <img src="assets/images/omkar.webp" class="card_part card_part-four"></img>
+    </div>
+    <div class="discirpt-box"></div>
+    <div class="aryan">
+      <h1 class="heading">Aryan</h1>
+      <p class="para">Anicon Manager</p>
+    </div>
+    <div class="scroller">
+      <div class="marquee banner-1">
+        <ul class="marquee__content">
+          <li>ani<span>con</span> - </li>
+          <li>ani<span>con</span> - </li>
+          <li>ani<span>con</span> - </li>
+          <li>ani<span>con</span> - </li>
+          <li>ani<span>con</span> - </li>
+          <li>ani<span>con</span> - </li>
+        </ul>
+        <ul class="marquee__content" aria-hidden="true">
+          <li>ani<span>con</span> - </li>
+          <li>ani<span>con</span> - </li>
+          <li>ani<span>con</span> - </li>
+          <li>ani<span>con</span> - </li>
+          <li>ani<span>con</span> - </li>
+          <li>ani<span>con</span> - </li>
+        </ul>
+      </div>
+      <div class="marquee banner-2">
+        <ul class="marquee__content">
+          <li>ani<span>con</span> - </li>
+          <li>ani<span>con</span> - </li>
+          <li>ani<span>con</span> - </li>
+          <li>ani<span>con</span> - </li>
+          <li>ani<span>con</span> - </li>
+          <li>ani<span>con</span> - </li>
+        </ul>
+        <ul class="marquee__content" aria-hidden="true">
+          <li>ani<span>con</span> - </li>
+          <li>ani<span>con</span> - </li>
+          <li>ani<span>con</span> - </li>
+          <li>ani<span>con</span> - </li>
+          <li>ani<span>con</span> - </li>
+          <li>ani<span>con</span> - </li>
+        </ul>
+      </div>
+      <div class="marquee banner-3">
+        <ul class="marquee__content">
+          <li>ani<span>con</span> - </li>
+          <li>ani<span>con</span> - </li>
+          <li>ani<span>con</span> - </li>
+          <li>ani<span>con</span> - </li>
+          <li>ani<span>con</span> - </li>
+          <li>ani<span>con</span> - </li>
+        </ul>
+        <ul class="marquee__content" aria-hidden="true">
+          <li>ani<span>con</span> - </li>
+          <li>ani<span>con</span> - </li>
+          <li>ani<span>con</span> - </li>
+          <li>ani<span>con</span> - </li>
+          <li>ani<span>con</span> - </li>
+          <li>ani<span>con</span> - </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="assets/scripts/preloader.js" async fetchpriority="high"></script>
+  <script src="assets/scripts/sidebar.js" async></script>
+  <script src="assets/scripts/menuicon.js" async></script>
+  <script src="assets/scripts/slideshow.js" async></script>
+  <script src="assets/scripts/discript.js" async></script>
 </body>
+
 </html>

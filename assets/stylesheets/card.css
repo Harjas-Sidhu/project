@@ -1,0 +1,78 @@
+.imgBx {
+    width: 48%;
+    height: 30%;
+    overflow: hidden;
+    position: absolute;
+    left: -1vw;
+    top: 19vh;
+    box-shadow: 0 2vw 6vw 1.2vw rgba(0, 0, 0);
+    z-index: 2;
+}
+
+.imgBx img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 1s;
+
+}
+
+.discirpt-box{
+    background-color: #171717;
+    border: 0.5vw solid white;
+    border-radius: 0vw;
+    height: 28%;
+    width: 64%;
+    position: absolute;
+    top: 41vh;
+    left: 39vw;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 0 2vw 9vw 1.2vw rgba(0, 0, 0, 0.7);
+}
+.heading{
+    position: absolute;
+    background-image: -webkit-linear-gradient(3deg, #faef17 -1%, #0dbb5f 100%);
+    background-image: -o-linear-gradient(3deg, #faef17 -1%, #0dbb5f 100%);
+    background-image: -moz-linear-gradient(3deg, #faef17 -1%, #0dbb5f 100%);
+    background-image: linear-gradient(-25deg, #faef17 -7%, #0dbb5f 98%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    z-index: 8;
+    top: 45vh;
+    left: 27vw;
+    font-family: 'orbitron', sans-serif;
+    font-size: 16vw;
+    width: 54%;
+}
+.para{
+    font-size: 9vw;
+    font-family: 'orbitron', sans-serif;
+    color: #565656;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+    top: 57vh;
+    left: 51vw;
+    z-index: 1;
+    width: 55%;
+}
+
+@keyframes opening {
+    0%{height: 0%;}
+    100%{height: 28%;}
+}
+
+@keyframes typewriting {
+    0%{width: 0%;}
+    100%{width: 54%;}
+}
+
+@keyframes typewriting2 {
+    0%{width: 0%;}
+    100%{width: 55%;}
+}
