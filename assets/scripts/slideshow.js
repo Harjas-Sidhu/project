@@ -17,10 +17,19 @@ const slideshow = (number) => {
 
 let n = 0;
 
+let names = ['Aditya', 'Aryan', 'Harjas','Omkar'];
+let discriptions = ['Sales Executive', 'Event Manager', 'Web Developer', 'Content Writer']
+
 setInterval(() => {
     slideshow(n);
+    document.getElementById('heading').innerHTML = names[n];
+    document.getElementById('para').innerHTML = discriptions[n];
+    let headingAnimation = names[n] + " 0.8s linear";
+    let paraAnimation = names[n] + "-para 2s linear";
+    document.getElementById('heading').style.animation = headingAnimation;
+    document.getElementById('para').style.animation = paraAnimation;
     n++;
     if(n == images.length){
         n = 0;
     }
-}, 10000);
+}, 6000);
