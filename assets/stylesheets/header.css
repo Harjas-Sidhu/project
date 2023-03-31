@@ -53,7 +53,7 @@ header>.menu_icon {
     right: 5vw;
     top: 3.1vh;
     align-items: flex-end;
-    z-index: 4;
+    z-index: 10;
 }
 
 header>.menu_icon>.bar1,
