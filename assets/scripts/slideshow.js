@@ -21,8 +21,8 @@ window.onpointermove = (e) => {
 
     nextPercentage *= 3;
 
-    nextPercentage = Math.min(nextPercentage, 0);
-    nextPercentage = Math.max(nextPercentage, -100);
+    nextPercentage = Math.min(nextPercentage, -10);
+    nextPercentage = Math.max(nextPercentage, -90);
 
     
 
