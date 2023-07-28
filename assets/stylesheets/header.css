@@ -25,24 +25,22 @@ header>.arrow {
 }
 
 header>.heading {
-    color: white;
     font-family: 'space_mono';
     font-size: 3.5em;
     overflow: hidden;
     position: absolute;
-    left: 20vw;
-}
-
-header>.heading>span {
-    background-image: -webkit-linear-gradient(203deg, #faef17 14%, #0dbb5f 100%);
-    background-image: -o-linear-gradient(203deg, #faef17 14%, #0dbb5f 100%);
-    background-image: -moz-linear-gradient(203deg, #faef17 14%, #0dbb5f 100%);
-    background-image: linear-gradient(270deg, #faef17 14%, #0dbb5f 100%);
+    left: 24vw;
+    background-image: -webkit-linear-gradient(77deg, #faef17, #0dbb5f, #0dbb5f, #faef17);
+    background-image: -o-linear-gradient(77deg, #faef17, #0dbb5f, #0dbb5f, #faef17);
+    background-image: -moz-linear-gradient(77deg, #faef17, #0dbb5f, #0dbb5f, #faef17);
+    background-image: linear-gradient(77deg, #faef17, #0dbb5f, #0dbb5f, #faef17);
+    background-size: 200%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    animation: bg-pan 3s linear infinite;
 }
 
 header>.menu_icon {
@@ -83,4 +81,13 @@ header>.transitioned>.bar3 {
     -webkit-transform: rotate(45deg) translate(-2.4vw, -2.4vw);
     transform: rotate(45deg) translate(-2.4vw, -2.4vw);
     background-color: #565656;
+}
+
+@keyframes bg-pan {
+    from {
+        background-position: 0% center;
+    }
+    to {
+        background-position: -200% center;
+    }
 }

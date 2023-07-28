@@ -169,7 +169,7 @@
     color: #88888B;
     font-size: 1.1em;
     position: relative;
-    top: -8vh;
+    top: -7vh;
     left: 8vw;
     word-wrap: normal;
     display: flex;
@@ -179,11 +179,11 @@
 }
 
 #quiz_event>.event_page_body>.body {
-    top: -9vh;
+    top: -5vh;
 }
 
 #cosplay_event>.event_page_body>.body {
-    top: -10vh;
+    top: -7vh;
 }
 
 .event_page_body>.register {

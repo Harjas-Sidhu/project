@@ -1,35 +1,42 @@
 let imageBox = document.getElementById('imgBx');
 let images = imageBox.children;
 
-const slideshow = (number) => {
-    for (let i = 0; i < images.length; i++) {
-        const element = images[i];
-        if(i != number){
-            element.style.opacity = '0';
-            element.style.filter = 'blur(10px)';
-            element.style.transform = 'translateX(-50%) scaleX(2)';
-        }
+window.onpointerdown = (e) => {
+    imageBox.dataset.mouseDownAt = e.clientX;
+}
+
+window.onpointermove = (e) => {
+
+    if(imageBox.dataset.mouseDownAt === "0"){
+        return;
     }
-    images[number].style.opacity = '1';
-    images[number].style.filter = 'blur(0)';
-    images[number].style.transform = 'translateX(0) scaleX(1)';
-};
 
-let n = 0;
+    const mouseDelta = parseFloat(imageBox.dataset.mouseDownAt) - e.clientX;
+    const maxDelta = window.innerWidth/2;
 
-let names = ['Aditya', 'Aryan', 'Harjas','Omkar'];
-let discriptions = ['Sales Executive', 'Event Manager', 'Web Developer', 'Content Writer']
+    const percentage = (mouseDelta/maxDelta) * -100;
+    let nextPercentage = parseFloat(imageBox.dataset.prev) + percentage;
 
-setInterval(() => {
-    slideshow(n);
-    document.getElementById('heading').innerHTML = names[n];
-    document.getElementById('para').innerHTML = discriptions[n];
-    let headingAnimation = names[n] + " 0.8s linear";
-    let paraAnimation = names[n] + "-para 2s linear";
-    document.getElementById('heading').style.animation = headingAnimation;
-    document.getElementById('para').style.animation = paraAnimation;
-    n++;
-    if(n == images.length){
-        n = 0;
+    imageBox.dataset.percentage = nextPercentage;
+
+    nextPercentage = Math.min(nextPercentage, 0);
+    nextPercentage = Math.max(nextPercentage, -100);
+
+    
+
+    imageBox.animate(
+        {transform : `translateX(${nextPercentage}%)`}
+        , {duration : 1200, fill: "forwards"});
+
+    for(const image of images){
+        image.animate(
+            {objectPosition : `${nextPercentage + 100}% 50%`}
+            , {duration : 1200, fill: "forwards"});
     }
-}, 6000);
+
+}
+
+window.onpointerup = (e) => {
+    imageBox.dataset.mouseDownAt = "0";
+    imageBox.dataset.prev = imageBox.dataset.percentage;
+}

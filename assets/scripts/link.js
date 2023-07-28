@@ -14,6 +14,7 @@ const link = (page_id) => {
         document.getElementsByTagName('body')[0].style.overflowX = 'hidden';
     }
     document.getElementById(page_id).style.display = 'flex';
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
 }
 
 link('homepage');
