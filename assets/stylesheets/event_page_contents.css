@@ -210,3 +210,8 @@
 #cosplay_event>.event_page_body>.register {
     top: -1.1vh;
 }
+
+.spacer{
+    width: 100%;
+    height: 2vh;
+}
