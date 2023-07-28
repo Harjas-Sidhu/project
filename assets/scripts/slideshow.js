@@ -19,6 +19,8 @@ window.onpointermove = (e) => {
 
     imageBox.dataset.percentage = nextPercentage;
 
+    nextPercentage *= 3;
+
     nextPercentage = Math.min(nextPercentage, 0);
     nextPercentage = Math.max(nextPercentage, -100);
 
@@ -33,10 +35,15 @@ window.onpointermove = (e) => {
             {objectPosition : `${nextPercentage + 100}% 50%`}
             , {duration : 1200, fill: "forwards"});
     }
-
+    imageBox.dataset.prev = imageBox.dataset.percentage;
 }
 
 window.onpointerup = (e) => {
+    imageBox.dataset.mouseDownAt = "0";
+    imageBox.dataset.prev = imageBox.dataset.percentage;
+}
+
+window.ontouchcancel = (e) => {
     imageBox.dataset.mouseDownAt = "0";
     imageBox.dataset.prev = imageBox.dataset.percentage;
 }
