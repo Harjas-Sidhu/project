@@ -19,10 +19,10 @@ window.onpointermove = (e) => {
 
     imageBox.dataset.percentage = nextPercentage;
 
-    nextPercentage *= 3;
+    nextPercentage *= 5;
 
-    nextPercentage = Math.min(nextPercentage, -10);
-    nextPercentage = Math.max(nextPercentage, -90);
+    nextPercentage = Math.min(nextPercentage, -5);
+    nextPercentage = Math.max(nextPercentage, -95);
 
     
 
