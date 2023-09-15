@@ -1,5 +1,6 @@
 let imageBox = document.getElementById('imgBx');
 let images = imageBox.children;
+let text = document.getElementById('text');
 
 window.onpointerdown = (e) => {
     imageBox.dataset.mouseDownAt = e.clientX;
@@ -32,6 +33,11 @@ window.onpointermove = (e) => {
 
     for(const image of images){
         image.animate(
+            {objectPosition : `${nextPercentage + 100}% 50%`}
+            , {duration : 1200, fill: "forwards"});
+    }
+    if(text){
+        text.animate(
             {objectPosition : `${nextPercentage + 100}% 50%`}
             , {duration : 1200, fill: "forwards"});
     }

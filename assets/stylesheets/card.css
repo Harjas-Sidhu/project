@@ -1,7 +1,14 @@
+.team{
+    position: absolute;
+    font-size: 13vw;
+    font-family: 'orbitron', sans-serif;
+    color: #04D368;
+    top: 18vh;
+    left: 3vw;
+}
 .imgBx {
     width: 313%;
     height: 36%;
-    overflow: hidden;
     position: absolute;
     left: 40vw;
     top: 30vh;
@@ -19,5 +26,15 @@
     aspect-ratio: 3/4;
     object-position: 100% 50%;
     display: block;
+    opacity: 0.4;
 }
 
+.imgBx h1{
+    font-size: 11vw;
+    position: relative;
+    top: 14vh;
+    left: -54vw;
+    color: white;
+    font-family: 'space_mono', sans-serif;
+    z-index: 2;
+}
